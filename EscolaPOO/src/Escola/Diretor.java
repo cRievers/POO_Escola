@@ -10,7 +10,7 @@ import java.util.ArrayList;
  *
  * @author Caio Rievers
  */
-public class Diretor extends Funcionario implements Sistema, Punir{
+public class Diretor extends Funcionario implements Punir{
     
     private ArrayList<Professor> profs;
     
@@ -36,43 +36,9 @@ public class Diretor extends Funcionario implements Sistema, Punir{
         profs.get(indexProf).insereMateria(materia);
     }
 
-    public void somarNota(int indexMateria, int indexProf, int indexAluno, float nota) {
-        profs.get(indexProf).somarNota(indexMateria, indexAluno, nota);
-    }
-
-    @Override
-    public void alterarNota(int indexMateria, int indexAluno, float nota) {
-        profs.
-    }
-
-    @Override
-    public void atribuirFalta(int indexMateria, int indexAluno) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public void removerFalta(int indexMateria, int indexAluno) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public float verNota(int indexMateria, int indexAluno) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public int verFalta(int indexMateria, int indexAluno) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
     @Override
     public void darAdvertencia(Aluno aluno) {
         aluno.darAdvertencia();
-    }
-
-    @Override
-    public void somarNota(int indexMateria, int indexAluno, float nota) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override

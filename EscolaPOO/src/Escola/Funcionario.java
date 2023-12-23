@@ -8,7 +8,7 @@ package Escola;
  *
  * @author Caio Rievers
  */
-public class Funcionario extends Pessoa{
+public abstract class Funcionario extends Pessoa{
     
     private double salario;
     

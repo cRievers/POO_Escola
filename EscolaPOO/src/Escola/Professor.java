@@ -60,7 +60,7 @@ public class Professor extends Funcionario implements Sistema, Punir{
     public void insereAluno(int nMateria, Aluno aluno){
         materias.get(nMateria).insereAluno(aluno);
     }
-
+    
     @Override
     public void expulsar(Aluno aluno) {
         aluno.setExpulso(true);

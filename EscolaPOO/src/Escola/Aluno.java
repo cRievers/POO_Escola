@@ -4,6 +4,8 @@
  */
 package Escola;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Caio Rievers
@@ -12,6 +14,7 @@ public class Aluno extends Pessoa {
     
     private int nAdvertencias;
     private boolean expulso;
+    private ArrayList<String> materias;
     
     public Aluno(String nome, String matricula) {
         super(nome, matricula);
@@ -34,4 +37,15 @@ public class Aluno extends Pessoa {
         this.expulso = expulso;
     }
     
+    
+    
+    /*
+    public void insereMateria(String materia){
+        this.materias.add(materia);
+    }
+    
+    public ArrayList<String> getMaterias(){
+        return materias;
+    }
+    */
 }
